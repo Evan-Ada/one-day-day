@@ -1,9 +1,10 @@
-1 <view class="wrap">
-2 <view class="total" :class="{ select: true, active: item.id === sel }" v-for="(item,index) in tabs" :key="index"
-3 @click="select(item)">
-4 {{ item.label }}
-5 </view>
-6 </view>
+# MD语法入门
 
+#### 1.前面带#号，后面带文字，分别表示h1-h6,只到h6，而且h1下面会有一条横线
 
-实现点击操作  ->
+# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
