@@ -1,0 +1,22 @@
+
+- 一：带[]的字符串如下处理
+```
+var str="[2,34,3.4]";
+var strNew=eval(str);
+console.log(strNew[0]+"--"+strNew[1]+"--"+strNew[2]);//2--34--3.4
+```
+- 二：正常字符串如下处理
+```
+var str2="2,34,3.4";
+var str2New=str2.split(",");
+console.log(str2New[0]+"++"+str2New[1]+"++"+str2New[2]);//2++34++3.4
+```
+
+- 三：带（）字符串如下处理
+```
+var str="合适dsw(18701200120)";
+var strNew =str.replace("(","").replace(")","");
+var strNewIphone=strNew.substr(strNew.length-11);
+var strNewName=strNew.substring(0,strNew.length-11);
+console.log(strNewName+"---"+strNewIphone);//合适dsw---18701200120
+```
