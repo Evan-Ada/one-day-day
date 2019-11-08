@@ -1,1 +1,53 @@
-2121212
+
+- templent:
+```
+ <el-col :span="11">
+          <el-link
+            :underline="false"
+            class="total"
+            :class="{ select: true, active: item.id === sel }"
+            v-for="(item,index) in tabs"
+            :key="index"
+            @click="select(item)"
+          >{{ item.label }}</el-link>
+        </el-col>
+```
+
+- script:
+```
+
+ data() {
+ return {
+      sel: 1,
+      tabs: [
+        { label: "全部", id: 0 },
+        { label: "今日", id: 1 },
+        { label: "近7日", id: 7 },
+        { label: "近15日", id: 15 },
+        { label: "近30日", id: 30 }
+      ],
+      type: "default",
+      inverted: false,
+      };
+     }
+
+```
+
+- css:
+```
+.total {
+  height: 35px;
+  width: 210px;
+}
+.select.active {
+  border-radius: 0px;
+  border: 1px dashed black;
+  height: 35px;
+  width: 210px;
+  background-color: white;
+}
+```
+
+---
+#### 最终实现，如下图：点击哪个哪个变化，其他的恢复默认样式
+##### 还没学会如何放图片，待我学会在放上
