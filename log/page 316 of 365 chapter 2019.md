@@ -626,10 +626,10 @@
 # bdict['name'] ='tom'
 # bdict['email'] = 'tom@tedu.cn'
 #
-```
+
 # del bdict['email']
 # bdict.pop('age')
 # bdict.clear()
 
-
+```
 
