@@ -1,10 +1,8 @@
 
-
+```
 #!/bin/env python3
 #-*- coding:utf8 -*-
 
-
-#早晨时刻
 # a = input('data: ')
 # for i in a:
 #     if i not in '0123456789':
@@ -628,6 +626,7 @@
 # bdict['name'] ='tom'
 # bdict['email'] = 'tom@tedu.cn'
 #
+```
 # del bdict['email']
 # bdict.pop('age')
 # bdict.clear()
