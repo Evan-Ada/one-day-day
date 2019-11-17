@@ -3,7 +3,6 @@
 ```
 #!/bin/env python3
 #-*- coding:utf8 -*-
-#学python3的第十天
 """
 
 ## OOP：面向对象编程
